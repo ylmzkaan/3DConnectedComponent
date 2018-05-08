@@ -13,20 +13,20 @@ HOW TO USE:
     import connectedComponent3D
 
 EXAMPLE:
-nOfComps, Labels = connectedComponent3D.main(array) function:
+numberOfConnectedComponents, connectedComponentLabels = connectedComponent3D.main(array) 
 
-FURTHER EXPLANATION:
-This is the main function. 
+Input arguments: 
 
-Input arguments: array -> The array which the connected component algorithm will be applied. This array should be binary and its
+array -> The array which the connected component algorithm will be applied. This array should be binary and its
 type should be 3D numpy array (dtype=np.int).
 
 Returns:
-nOfComps -> This is the number of distinct components found within the input array. Its type is int.
 
-Labels -> This has the same dimensions with the input array. If an element belongs to background, then its label appears to be 0 in the
-Labels array. If an element belongs to a component, then its label becomes a non-zero integer. The label of an element which is 
-located at array[z, y, x] is saved at Labels[z, y, x]. 
+numberOfConnectedComponents -> This is the number of distinct components found within the input array. Its type is int.
+
+connectedComponentLabels -> This has the same dimensions with the input array. If an element belongs to background, then its label appears to be 0 in the connectedComponentLabels array. If an element belongs to a component, then its label becomes a non-zero integer. The label of an element which is located at array[z, y, x] is saved at Labels[z, y, x]. 
+
+
 
 BASIC FLOW OF THE ALGORITHM:
 
