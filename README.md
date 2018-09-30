@@ -4,9 +4,13 @@ This a Cython implementation of the 26-Neighbors 3D Connected Component Algorith
 
 
 HOW TO USE:
+
 1- On your command window, cd into folder that you keep the connectedComponent3D.pyx and connectedComponent3D_Setup.py files. 
+
 2- Then, to compile the code, execute the following:
+
     python connectedComponent3D_Setup.py build_ext -i
+    
 3- To import the module, on your IDE or interactive shell, execute the following:
     import connectedComponent3D
 
