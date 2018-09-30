@@ -14,19 +14,21 @@ HOW TO USE:
 3- To import the module, on your IDE or interactive shell, execute the following:
     import connectedComponent3D
 
-EXAMPLE:
-numberOfConnectedComponents, connectedComponentLabels = connectedComponent3D.main(array) 
+Example Code:
+    numberOfConnectedComponents, connectedComponentLabels = connectedComponent3D.main(array) 
 
 Input arguments: 
 
-binary3DArray -> The array which the connected component algorithm will be applied to. This array should be binary and its
-type should be 3D numpy array (dtype=np.int).
+    binary3DArray -> The array which the connected component algorithm will be applied to. This array should be binary and its
+    type should be 3D numpy array (dtype=np.int).
 
 Returns:
 
-numberOfComponents -> This is the number of distinct components found within the input array. Its type is int.
+    numberOfComponents -> This is the number of distinct components found within the input array. Its type is int.
 
-labels -> This has the same dimensions with the input array. If an element belongs to background, then its label appears to be 0 in the labels array. If an element belongs to a component, then its label becomes a positive integer. The label of an element which is located at binary3DArray[z, y, x] is saved at labels[z, y, x]. 
+    labels -> This has the same dimensions with the input array. If an element belongs to background, then its label appears 
+    to be 0 in the labels array. If an element belongs to a component, then its label becomes a positive integer. 
+    The label of an element which is located at binary3DArray[z, y, x] is saved at labels[z, y, x]. 
 
 
 
