@@ -61,7 +61,7 @@ cdef connectedComponent3D(int[:,:,:] binary3DArray, q):
                         
                         for neighbor in neighbors:
                             if (binary3DArray[neighbor[0], neighbor[1], neighbor[2]] == 1 
-                                and labels[neighbor[0], neighbor[1], neighbor[2]]) == 0:
+                                and labels[neighbor[0], neighbor[1], neighbor[2]] == 0):
                                 labels[neighbor[0], neighbor[1], neighbor[2]] = currentComponent
                                 q.append([neighbor[0], neighbor[1], neighbor[2]])
                     
